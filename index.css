@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+}
+
+@layer base {
+  /* Requirement: 5 different CSS selectors and properties */
+  
+  /* Selector 1: Element selector */
+  body {
+    background-color: #f0f9ff;
+    color: #0c4a6e;
+  }
+
+  /* Selector 2: Class selector */
+  .fish-card {
+    border: 2px solid #0ea5e9;
+    border-radius: 12px;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+  }
+
+  /* Selector 3: ID selector */
+  #main-footer {
+    background-color: #075985;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  /* Selector 4: Pseudo-class selector */
+  .nav-link:hover {
+    text-decoration: underline;
+    color: #38bdf8;
+  }
+
+  /* Selector 5: Descendant selector */
+  .report-form input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
